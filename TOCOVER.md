@@ -57,6 +57,13 @@ CREATE TABLE <table name> (
 - Aggregate functions
   - min(), max(), sum(), avg(), count()
   - Count does not take into account null values
+- <column name> LIKE '%something here%'
+- Case insensitive 
+  - SQL Syntax
+  - Column names
+  - Like partials
+ - DISTINCT 
+  - returns no duplicate values
 
 
 ## Adding, Updating, Removing Rows in a Table
