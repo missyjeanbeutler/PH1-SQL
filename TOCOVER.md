@@ -12,12 +12,12 @@ This is a list of topics that will be covered in today's lecture.
 
 - blueprint for your database
 - instructions for how to set up your table
-
+```
 CREATE TABLE <table name> (
   <column name> <data type> [<constraint>],
   <column name> <data type> [<constraint>] ...
 );
-
+```
 ## Datatypes
 
 - Null 
@@ -38,17 +38,21 @@ CREATE TABLE <table name> (
 
 ## SELECTS
 
-- SELECT *
+- ```
+  SELECT *
   FROM <table name>
-- SELECT <column name> [, <column name...>]
+  ```
+- ```
+  SELECT <column name> [, <column name...>]
   FROM <table name>;
+  ```
 - WHERE Clause
   - Comparison operators 
     - >, <, >=, !=, etc....
   - Logical operators
     - AND, OR
   - IS NULL, IS NOT NULL (cannot do = NULL or != NULL)
-  - <column name> IN(<list of values>) (short syntax for multiple ORs)
+  - `<column name> IN(<list of values>)` (short syntax for multiple ORs)
     - can also use NOT IN()
   - BETWEEN <value> AND <another value> (shorthand for multiple comparison operators like < >)
 - LIMIT <number> 
@@ -68,18 +72,22 @@ CREATE TABLE <table name> (
 
 ## Adding, Updating, Removing Rows in a Table
 
-- INSERT INTO <table name>
+- ```
+  INSERT INTO <table name>
   (<column names...>)
   VALUES
   (<values matching the column order>);
-
-- UPDATE <table name>
+```
+- ```
+  UPDATE <table name>
   SET <column name> = <new value>
   WHERE id = <id number>
-
-- DELETE FROM <table name>
+```
+- ```
+  DELETE FROM <table name>
   WHERE id = <id number>
+  ```
     - DO NOT FORGET WHERE CLAUSE
     - Practice with select statement first
     
-- DROP TABLE <table name>;
+- `DROP TABLE <table name>`;
