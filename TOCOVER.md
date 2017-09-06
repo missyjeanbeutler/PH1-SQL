@@ -35,6 +35,7 @@ CREATE TABLE <table name> (
 - AKA Query
 - Semi-colons
 - no trailing commas
+- Single quotes for string, double quotes will make postgres think you're referring to a column name
 
 ## SELECTS
 
@@ -61,7 +62,7 @@ CREATE TABLE <table name> (
 - Aggregate functions
   - `min(), max(), sum(), avg(), count()`
   - Count does not take into account null values
-- `<column name> LIKE '%something here%'`
+- `WHERE <column name> LIKE '%something here%'`
 - Case insensitive 
   - SQL Syntax
   - Column names
